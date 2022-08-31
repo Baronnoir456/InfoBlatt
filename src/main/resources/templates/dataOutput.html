@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>data outpout 🧑‍💻</title>
+</head>
+<body>
+<h1>Daten output des infoblatts</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Nachname</th>
+    <th>Geburstag</th>
+    <th>wohnort</th>
+    <th>Loeschen</th>
+  </tr>
+  <tr th:each="infoBlatt: ${dataList}">
+    <td class="align-middle" th:text="${infoBlatt.name}"></td>
+    <td class="align-middle" th:text="${infoBlatt.nachname}"></td>
+    <td class="align-middle" th:text="${infoBlatt.geburstag}"></td>
+    <td class="align-middle" th:text="${infoBlatt.wohnort}">tulpe</td>
+    <td><a th:href="@{/delete/}+${infoBlatt.id}">delete</a></td>
+
+
+  </tr>
+</table>
+</body>
+</html>

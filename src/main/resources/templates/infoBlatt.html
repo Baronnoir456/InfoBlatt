@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gib uns infos ueber dich 🗒️</title>
+</head>
+<body>
+<h1>Lernen wir dich mal kennen!</h1>
+
+<form action="#" th:action="@{/info}" th:object="${infoBlatt}" method="post">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname" th:field="*{name}" required><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" th:field="*{nachname}" required><br><br>
+    <label for="bDay">Birth Date:</label>
+    <input type="text" id="bDay" name="bDay" th:field="*{geburstag}" required><br><br>
+    <label for="wOrt">Wohnort:</label>
+    <input type="text" id="wOrt" name="wOrt" th:field="*{wohnort}" required><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

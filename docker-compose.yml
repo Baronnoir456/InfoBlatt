@@ -1,0 +1,21 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  db:
+    image: mariadb:10.9.2-jammy
+    restart: always
+    container_name: infoBlattDb
+    ports:
+      - 3306:3306
+    environment:
+      MARIADB_ROOT_PASSWORD: lars
+      MARIADB_DATABASE: infoBlatt
+      MARIADB_USER: infoBuser
+      MARIADB_PASSWORD: giich2Xu
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080

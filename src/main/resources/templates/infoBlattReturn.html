@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info blatt return</title>
+</head>
+<body>
+<h1>Deine infos</h1>
+<ul>
+  <li th:text="'Dein name ist: '+${infoBlatt.name}"></li>
+  <li th:text="'Dein nachname ist: '+${infoBlatt.nachname}"></li>
+  <li th:text="'Deine mutter gebar dich am: '+${infoBlatt.geburstag}"></li>
+  <li th:text="'Du wohnst in: '+${infoBlatt.wohnort}"></li>
+</ul>
+<button><a th:href="@{/data}">see all the data</a></button>
+</body>
+</html>

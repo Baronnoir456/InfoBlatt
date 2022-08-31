@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    username: infoBuser
+    password: giich2Xu
+    url: jdbc:mariadb://localhost:3306/infoBlatt
+  jpa.hibernate.ddl-auto: update
