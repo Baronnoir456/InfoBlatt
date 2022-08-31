@@ -26,9 +26,9 @@ jobs:
       with:
         mariadb version: '10.9.2-jammy'
         mysql database: 'infoBlatt'
-        mysql root password: ${{ secrets.ROOTPASSWORD }}
+        mysql root password: '${{ secrets.ROOTPASSWORD }}'
         mysql user: 'infoBuser' 
-        mysql password: ${{ secrets.DATABASEPASSWORD }}
+        mysql password: '${{ secrets.DATABASEPASSWORD }}'
     - name: Build with Maven
       run: ./mvnw -B package --file pom.xml
     
