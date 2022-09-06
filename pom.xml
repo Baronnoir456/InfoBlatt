@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.lars</groupId>
-	<artifactId>geometry</artifactId>
+	<artifactId>infoblatt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>geometry</name>
-	<description>managment verscheidener geometrischen figuren</description>
+	<name>infoblatt</name>
+	<description>Management von Infoblaettern von Personen</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
